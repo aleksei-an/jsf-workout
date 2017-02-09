@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:metadata>
+        <f:viewParam name="playernameparam" value="#{playersBean.name}"/>
+        <f:viewParam name="playersurnameparam" value="#{playersBean.surname}"/>
+    </f:metadata>
+    <h:head>
+        <title>Chapter 2.7 Index</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Enter name:<h:inputText value="#{playersBean.name}"/>
+            Enter surname:<h:inputText value="#{playersBean.surname}"/>
+            <h:commandButton value="Submit" action="#{playersBean.toUpperCase()}"/>
+        </h:form>
+    </h:body>
+</html>

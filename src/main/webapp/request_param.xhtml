@@ -6,7 +6,7 @@
       xmlns:f="http://java.sun.com/jsf/core">
     <h:form>
         Click to send name, 'Rafael' surname, 'Nadal', with f:param:
-        <h:commandButton value="Send rafael Nadal" action="#{playersBean.parametersAction()}">
+        <h:commandButton value="Send rafael Nadal" action="#{managedPropertyPlayersBean.parametersAction()}">
             <f:param id="playerName" name="playerNameParam" value="Rafael"/>
             <f:param id="playerSurname" name="playerSurnameParam" value="Nadal"/>
         </h:commandButton>

@@ -1,4 +1,4 @@
-package org.sorgen.bean;
+package org.sorgen;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -18,6 +18,10 @@ public class PlayersBean {
     private String name;
 
     private String surname;
+
+    public PlayersBean() {
+
+    }
 
     public String getName() {
         return name;
@@ -43,6 +47,13 @@ public class PlayersBean {
         surname = params.get("playerSurnameParam");
         System.out.println(name + " " + surname);
         return "request_param_result";
+    }
+
+    public String toUpperCase() {
+        name = name.toUpperCase();
+        surname = surname.toUpperCase();
+
+        return "/ch_2_7/results?faces-redirect=true&includeViewParams=true";
     }
 
 }

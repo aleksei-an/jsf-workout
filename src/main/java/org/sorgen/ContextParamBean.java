@@ -1,4 +1,4 @@
-package org.sorgen.bean;
+package org.sorgen;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
